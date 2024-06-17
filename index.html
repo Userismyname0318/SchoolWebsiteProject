@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1D3E87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #4682B4;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+}
+</style>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=ProjectMain.html">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <script>
+        function redirect() {
+            setTimeout(function() {
+                window.location.href = 'ProjectMain.html';
+            }, 3000); 
+        }
+    </script>
 </head>
-<body>
-    <p>If you are not redirected automatically, follow this <a href="main.html">link</a>.</p>
+<body onload="redirect()">
+    <div class="container">
+        <h1>Welcome, ISCPian!</h1>
+          <p>If you are not redirected automatically, click this <a href="ProjectMain.html">Link</a>.</p>
+    </div>
 </body>
 </html>
